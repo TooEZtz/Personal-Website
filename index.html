@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/X.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header_text">
+                <p>
+                    Truman Student
+                </p>
+
+                <h1>I'm <span>Shalin</span> Bhattarai<br> from Nepal</h1>
+            </div>
+        </div>
+    </div>
+  <!----------------------------------------------about---------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/sunset.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <video id="myVideo" autoplay muted loop>
+                    <source src="Images/ocean.mp4" type="video/mp4"/>
+                    </video>
+                    
+                    <div class="above_video">
+                     <h1 class="sub-tittle">
+                         About Me
+                     </h1>
+                     <p class="text_abt">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum et quaerat optio, sunt officia dicta accusamus nisi voluptas ab repellat animi maiores aliquam perferendis non mollitia dolorum consequatur repudiandae incidunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe accusamus dolore distinctio tempore aspernatur, nostrum illo commodi inventore ratione sapiente cupiditate excepturi cum pariatur est. Aliquam eveniet cum debitis aliquid!
+                        </p>
+                       <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class ="tab-links" onclick="opentab('experience')">Experience</p>
+                       </div> 
+                       <div class ="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><img class ="unreal_pi"src="Images/unreal.png">Unreal Engine</span><br>C++<br>3d rendering<br>Third Person AAA games</li>
+                            <li><span>HTML/CSS</span><br>JavaScript<br></li>
+                            <li><span>Java</span><br>Android app development<br><br></li>
+                            
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Truman State University</span><br>2022-<br><br></li>
+                            <li><span>St.Xavier's High School, Nepal</span><br>2019-2021<br><br></li>
+                            <li><span>St.Xavier's School, Godavari, Nepal</span><br>2009-2019<br><br></li>     
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <!--<li><span>Campus-Mailroom</span><br><br><br></li>
+                            <li><span></span><br><br><br></li>
+                            <li><span></span><br><br><br></li>-->
+                        </ul>
+                       </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure harum eius quo. Sint deleniti quas odit optio, quod sapiente, voluptatem quidem magni iusto deserunt at aut libero. Illo, veniam voluptates?
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------Portofolio-------------------------------->
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-tittle">
+            Portofolio
+        </h1>
+    </div>
+</div>
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+
+    </script>
+</body>
+</html>
