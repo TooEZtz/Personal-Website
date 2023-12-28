@@ -1,1 +1,1 @@
-https://tooeztz.github.io/Personal-Website/
+https://tooeztz.github.io/Shalin_Bhattarai/
