@@ -72,11 +72,26 @@ nav ul li a:hover::after{
     color: #709194;
     
 }
+.header_text p{
+    font-size: 50px;
+    font-weight: 500;
+}
 /*-----------------------------------------------------------------ABOUT---------------------------------------*/
+
+.header_text h1 .shalin:hover{
+    color: #ff004f;
+    cursor: pointer;
+}
+
+
 
 #about{
    padding: 0 0;
    color: black;
+}
+
+.namaste{
+    max-width: 100px;
 }
 
 .row{
@@ -174,10 +189,276 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+/*---------------------------------------------------------------Services--------------------------------------*/
+
+
+.services{
+    padding: 50px;
+}
+#services h1{
+    color: #080808;
+    font-size: 50px;
+    padding: 5% 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div:hover{
+   background-color: aquamarine;
+   transform: translateY(-10px);
+   cursor:crosshair;
+
+}
+
+
+.services-list div{
+    background: #262626 ;
+    padding: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s ;
+    
+}
+
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #ff004f;
+}
+
+.services-list div i:hover{
+    
+    color: #F2F2F2;
+}
+
+.services-list h2{
+    color: #709194;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div img{
+    width: 100%;
+    position:absolute;
+    max-height: 900px;
+    max-width: 600px;
+}
+    
+
+
+.services-list p{
+    color: #080808;
+    font-size: 20px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color:#ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.services-list div a:hover{
+    color: #F2F2F2;
+}
 /*---------------------------------------------------------------portofolio--------------------------------------*/
+
+#portofolio{
+    padding: 50px 0;
+}
 
 #portofolio h1{
     color: #080808;
     font-size: 50px;
-    padding: 10% 0;
+    padding: 5% 0;
 }
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.work:hover img{
+    transform:scale(1.1);
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background : linear-gradient(rgba(0,0,0,0.6), #709194 );
+    border-radius:10px;
+    position: absolute;
+    left:0 ;
+    bottom: 0;
+    overflow: hidden;
+    display:flex ;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    align-items: center;
+    transition: height 0.5s;
+}
+
+.work:hover .layer{
+    height: 100%;
+}
+.layer a{
+    text-decoration: none;
+    color:#ff004f;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    line-height:60px;
+    background: #F2F2F2;
+    width :60px;
+    height: 60x;
+    border-radius: 60px;
+}
+
+.layer a:hover{
+    color: #080808;
+}
+
+.layer h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ff004f;
+}
+
+.layer p{
+    font-size: 14px;
+}
+
+/*--------------------------------------------------------------contacts----------------------------------*/
+
+#contact{
+    padding: 50px 0;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+}
+
+.contact-left p i{
+    color:#709194;
+    margin-right: 15px;
+    font-size:px ;
+    cursor:pointer;
+    
+}
+
+.contact-left p i:hover{
+    color: #ff004f;
+}
+
+.social-icons{
+    font-size: 25px;
+    padding-top: 15px;
+}
+
+.social-icons i{
+    padding-right: 15px;
+    padding-top: 15px;
+    color: #709194;
+    transition: transform(0.5s);
+   
+}
+
+.social-icons i:hover{
+ color: #ff004f;
+ transform: translateY(-5px);
+ 
+}
+
+.dwnld{
+   display: inline-block;
+   margin-top: 20px;
+   width: fit-content;
+   border: 1px solid;
+   padding: 14px 50px;
+   border-radius: 15px;
+   font-size: 15px;
+   text-decoration: none;
+   color: white;
+   background: #709194;
+   transition: background-color 0.3s;
+}
+
+.dwnld:hover{
+    background-color: #ff004f;
+    
+   
+}
+
+
+.contact-right form{
+    width: 100%;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline:none;
+    background: #262626;
+    padding:35px;
+    margin: 15px 0;
+    color :white;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.submit{
+    display: inline-block;
+    margin-top: 20px;
+    width: fit-content;
+    border: 1px solid;
+    padding: 14px 50px;
+    border-radius: 15px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    background: #709194;
+    transition: background-color 0.3s;
+    cursor: pointer;
+ }
+
+ .submit:hover{
+    background-color: #ff004f;
+ }
